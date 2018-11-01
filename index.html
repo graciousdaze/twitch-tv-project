@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>twitch.TV Lookup</title>
+        <link href="styles.css" rel="stylesheet /" >
+        <link href="https://fonts.googleapis.com/css?family=Cabin+Condensed" rel="stylesheet" />
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" /> 
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+    </head>
+    <body>
+        <div id="header" class="jumbotron">
+            <h1>twitch.tv Lookup <i class="fa fa-twitch"></i></h1>
+            <p id="headline"><em>Check if your favorite channels are streaming</em></p>
+            <input type="text" id="channelName" placeholder="Search for a channel..." />
+            <button id="addChannel">Add Channel</button>
+            <button id="all">All Channels</button>
+            <button id="online">Online</button>
+            <button id="offline">Offline</button>
+            <p id="alreadySearched" class="hidden">Channel already listed</p>
+            <p id="errorMessage" class="hidden">That channel does not exist</p>
+        </div>
+        <div class="container">
+            <div id="searches" class="hidden row">
+                <h2 class="bodyTitles">Searches:</h2>
+            </div>
+            <div id="userGroup">
+                <h2 class="bodyTitles">Featured:</h2>
+            </div>
+        </div>
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+        <script src="script.js"></script>
+    </body>
+</html>

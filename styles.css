@@ -1,0 +1,212 @@
+body {
+    font-family: Cabin Condensed;
+  }
+  
+  /*Page Header Styles*/
+  div#header.jumbotron {
+    background: #6441a5;
+    margin-top: -5%;
+    color: white;
+    top: 0;
+    z-index: 100;
+    position: fixed;
+    width: 100%;
+  }
+  
+  .jumbotron > * {
+    margin-left: 10%;
+  }
+  
+  #headline {
+    font-size: 1em;
+    opacity: 0.8;
+  }
+  
+  #header > h1 {
+    margin-left: 8%;
+    margin-top: 75px;
+  }
+  
+  #errorMessage, #alreadySearched {
+    background: rgb(242, 65, 65);
+    width: 15%;
+    min-width: 150px;
+    font-size: 1em;
+    margin-top: 10px;
+    border-radius: 3px;
+    padding: 3px;
+    text-align: center;
+    margin-bottom: 0px;
+    display: block;
+  }
+  
+  input#channelName {
+    color: black;
+    border-radius: 3px;
+    padding: 3px;
+    border: 2px solid white;
+    width: 17%;
+  }
+  
+  input#channelName:focus, button:focus {
+    outline: none;
+  }
+  
+  #addChannel {
+    background: white;
+    color: #6441a5;
+    margin-left: 0;
+    font-weight: bold;
+  }
+  
+  #all, #online, #offline {
+    margin-left: 0;
+    margin-right: 0;
+    background: #6441a5;
+  }
+  
+  #all:hover, #online:hover, #offline:hover {
+    background: white;
+    font-weight: bold;
+    color: #6441a5;
+  }
+  
+  #all, #online, #offline, #addChannel {
+    padding: 3px;
+    border-radius: 3px;
+    border: 2px solid white;
+  }
+  
+  /*MAIN BODY STYLES*/
+  
+  /*Div styles*/
+  .container {
+    margin-top: 20em;
+  }
+  
+  .users, .userInfo {
+    padding: 50px;
+    margin: 10px;
+    margin-top: 5%;
+    height: 250px;
+    border-radius: 30%;
+  }
+  
+  
+  /*Header Styles*/
+  #searches {
+    min-height: 250px;
+    margin-bottom: 5%;
+    margin-left: 0;
+  }
+  
+  .bodyTitles {
+    margin-bottom: 0;
+    line-height: 0;
+    background: #6441a5;
+    color: white;
+    padding: 20px;
+    width: 150px;
+    border-radius: 5px;
+    font-size: 1.75em;
+  }
+  
+  /*online and offline overlay styles*/
+  div.streamOverlay, .overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: -1px;
+    width: auto;
+  }
+  
+  .overlay {
+    background: rgba(0,0,0, 0.7);
+    margin: auto;
+  }
+  
+  div.streamOverlay {
+    background: #6441a5;
+    border-radius: 30%;
+    opacity: 0;
+    height: 100%;
+    transition: 0.2s ease;
+  }
+  
+  div.overlayOnline {
+    background: green; 
+    border:2px solid green;
+  }
+  
+  .onlineUser {
+    box-shadow: 0px 2px 15px green;
+    border: 2px solid green;
+  }
+  
+  div.streamOverlay:hover {
+    opacity:1;
+    transition: 0.2s ease;
+  }
+  
+  /*stream channel information styles*/
+  .statusOffline, .userName, .statusOnline {
+    text-align: center;
+    display: block;
+    color: white;
+    position: absolute;
+    margin: auto;
+    bottom: 35%;
+    right: 15%;
+    left: 15%;
+  }
+  
+  p.userName {
+    font-size: 2.5em;
+    bottom: 45%;
+  }
+  
+  .statusOnline {
+    top: 20%;
+    font-size: 1.25em;
+  }
+  
+  .statusOffline {
+    top: 30%;
+    left: 10%;
+    font-size: 5em;
+  }
+  
+  .hidden {
+    opacity: 0;
+  }
+
+  /* Media Queries */
+
+  /* Smartphones (portrait and landscape) ----------- */
+@media only screen and (max-width : 600px) {
+    .container {
+        width: 65%;
+        text-align: center;
+        margin: auto;
+        margin-top: 20em;
+    }
+
+    #userGroup {
+        text-align: center;
+    }
+
+    input#channelName {
+        display: block;
+        width: 75%;
+    }
+
+    #all, #Online, #offline, #addChannel {
+        margin-top: 1%;
+    }
+
+    #addChannel {
+        margin-left: 10%;
+    }
+
+}
